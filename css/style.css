@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;&display=swap');
 
 :root{
-    --main-color:#166ca5;
+    --main-color:#16a59e;
     --red:red;
     --light-color:#777;
     --light-bg:#eee;
-    --black:#2c3e50;
+    --black:#354b4c;
     --white:#fff;
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
     --border:.1rem solid rgba(0,0,0,.2);
@@ -54,6 +54,15 @@ section{
     padding: 2rem;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    color: var(--black);
+    text-transform: capitalize;
+    padding: 1rem 0;
 }
 
 .button{
@@ -119,6 +128,114 @@ section{
     background-color: var(--main-color);
     color: var(--white);
 }
+
+
+.home-container{
+    background: url(/JobBoardLite-Job-Listing-Portal/image.job),rgba(0,0,0,.7)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: color;
+}
+
+.home-container .home{
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container .home form{
+    background-color: var(--white);
+    width: 50rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-container .home form h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.home-container .home form p{
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    padding-top: 1rem;
+}
+
+.home-container .home form p span{
+    color: var(--red);
+}
+
+.home-container .home form .input{
+    width: 100%;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    background-color: var(--light-bg);
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.category .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.category .box-container .box{
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 1.5rem;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.category .box-container .box i{
+    height: 4.5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.category .box-container .box h3{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    color: var(--black);
+    padding-bottom: .4rem;
+}
+.category .box-container .box span{
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.category .box-container .box:hover{
+    background-color: var(--black);
+}
+.category .box-container .box:hover h3{
+    color: var(--white);
+}
+.category .box-container .box:hover span{
+    color: var(--white);
+}
+.category .box-container .box:hover i{
+    color: var(--black);
+    background-color: var(--white);
+}
+
 
 
 
@@ -225,6 +342,15 @@ section{
     .header .container .navbar a{
         display: block;
         padding: 1.5rem 2rem;
+    }
+
+    .category .box-container{
+        grid-template-columns: repeat(auto-fit,16rem);
+    }
+
+    .category .box-container .box{
+        flex-flow: column;
+        text-align: center;
     }
 }
 

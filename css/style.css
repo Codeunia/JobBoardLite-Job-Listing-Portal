@@ -65,6 +65,18 @@ section{
     padding: 1rem 0;
 }
 
+.section-title{
+    border-top: 1rem solid var(--main-color);
+    border-bottom: 1rem solid var(--main-color);
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 2rem;
+    font-size: 5rem;
+    text-align: center;
+
+}
+
 .button{
     display: inline-block;
     margin-top: 1rem;
@@ -81,6 +93,14 @@ section{
 .button:hover{
     background-color: var(--black);
 
+}
+
+.flex-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .header{
@@ -236,6 +256,135 @@ section{
     background-color: var(--white);
 }
 
+.jobs-container .box-container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,40rem);
+    gap: 3.3rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-items: stretch;
+    box-sizing: border-box;
+    
+}
+
+.jobs-container .box-container .box{
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    overflow-x: hidden;
+    gap: 1rem;
+}
+
+.jobs-container .box-container .box .company{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.jobs-container .box-container .box .company img{
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+}
+
+.jobs-container .box-container .box .company h3{
+    font-size: 1.8rem;
+    color: var(--black);
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+}
+
+.jobs-container .box-container .box .company span{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.jobs-container .box-container .box .job-title{
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.jobs-container .box-container .box .location{
+    padding: .7rem 0;
+    font-size:1.6rem;
+    color: var(--light-color);
+}
+
+.jobs-container .box-container .box .location i{
+    margin-right: .3rem;
+    color: var(--main-color);
+}
+
+.jobs-container .box-container .box .tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.jobs-container .box-container .box .tags p{
+    padding: 1.2rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.jobs-container .box-container .box .tags p i{
+    margin-right: .5rem;
+    color: var(--black);
+
+}
+
+.jobs-container .box-container .box .fa-heart{
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    color: var(--light-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    height: 4rem;
+    width: 4.5rem;
+    line-height: 4rem;
+    gap: 1rem;
+}
+
+.jobs-container .box-container .box .fa-heart:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.about img{
+    width:100% ;
+    margin-bottom: 1.5rem;
+}
+.about .box{
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+}
+.about .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.about .box p{
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
 
 
 
@@ -316,6 +465,9 @@ section{
     html{
         font-size: 55%;
     }
+    .section-title{
+        font-size: 4rem;
+    }
 }
 
 @media (max-width: 770px){
@@ -348,15 +500,38 @@ section{
         grid-template-columns: repeat(auto-fit,16rem);
     }
 
+    .jobs-container .box-container{
+        display: block;
+    }
+
+    .jobs-container .box-container .box{
+        padding: 1rem .5rem;
+        margin-bottom: 2rem;
+
+    }
+
+    
+
     .category .box-container .box{
         flex-flow: column;
         text-align: center;
     }
+
+    .section-title{
+        font-size: 4rem;
+    }
 }
+
+
+    
+
 
 @media (max-width: 400px){
     html{
         font-size: 50%;
+    }
+    .section-title{
+        font-size: 3rem;
     }
 }
 

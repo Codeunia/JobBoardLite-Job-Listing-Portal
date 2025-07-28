@@ -386,6 +386,71 @@ section{
     font-size: 1.5rem;
 }
 
+.reviews{
+    padding: 50px 5%;
+    background-color: #f5f5f5;
+}
+
+.reviews .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.8rem;
+}
+.reviews img{
+    width: 200px;
+    height: 200px;
+}
+.reviews .box-container .box{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+.reviews .box-container .box .stars{
+    margin-bottom: 1.5rem;
+}
+.reviews .box-container .box .stars i{
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+.reviews .box-container .box .title{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--black);
+    text-align: right;
+}
+.reviews .box-container .box p{
+    text-align: right;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.reviews .box-container .box .user{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+.reviews .box-container .box .user img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reviews .box-container .box .user h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 5rem;
+    text-transform: capitalize      ;
+}
+.reviews .box-container .box .user span{
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
 
 
 

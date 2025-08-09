@@ -257,12 +257,9 @@ section{
 }
 
 .jobs-container .box-container{
-    display: flex;
-    grid-template-columns: repeat(auto-fit,40rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 3.3rem;
-    align-items: flex-start;
-    justify-content: space-around;
-    align-items: stretch;
     box-sizing: border-box;
     
 }
@@ -452,10 +449,204 @@ section{
     font-size: 1.6rem;
 }
 
+.job-filter form{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+}
 
+.job-filter form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
 
+.job-filter form .flex .box{
+    flex: 1 1 40rem;
+}
 
+.job-filter form .flex .box p{
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
 
+.job-filter form .flex .box p span{
+    color: var(--red);
+}
+
+.job-filter form .flex .box .input{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.4rem;
+    color: var(--black);
+    margin: 1rem 0;
+    background-color: var(--light-bg);
+}
+
+.job-filter form .dropdown-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.job-filter form .dropdown-container .dropdown{
+    flex: 1 1 20rem;
+    position: relative;
+}
+
+.job-filter form .dropdown-container .dropdown .output{
+    width: 100%;
+    background: var(--light-bg);
+    border-radius: .5rem;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.job-filter form .dropdown-container .dropdown .output:placeholder-shown{
+    text-transform: capitalize;
+}
+
+.job-filter form .dropdown-container .dropdown .lists{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    z-index: 10;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.job-filter form .dropdown-container .dropdown .lists .items{
+    padding: 1.2rem 1.4rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.job-filter form .dropdown-container .dropdown .lists .items:hover{
+    background-color: var(--light-bg);
+}
+
+.job-filter form .dropdown-container .dropdown .lists:hover,
+.job-filter form .dropdown-container .dropdown:hover .lists
+.job-filter form .dropdown-container .dropdown .output:focus + .lists,
+.job-filter form .dropdown-container .dropdown .output:focus-within + .lists{
+    transform: scaleY(1);
+    transition: .2s linear;
+}
+
+.job-details .details{
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    overflow-x: hidden;
+}
+
+.job-details .details h3{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.job-details .details .job-info a{
+    display: block;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    margin: .5rem 0;
+}
+
+.job-details .details .job-info a:hover{
+    text-decoration: underline;
+}
+
+.job-details .details .job-info p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.job-details .details .basic-details{
+    background-color: var(--light-bg);
+    margin: 1.5rem 0;
+    border-radius: .5rem;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.job-details .details .basic-details p{
+    color: var(--light-color);
+    padding-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.job-details .details ul {
+    margin: 1rem 0;
+}
+
+.job-details .details ul li{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    margin-left: 3rem;
+}
+
+.job-details .details .description{
+    margin-top: 1.5rem;
+}
+
+.job-details .details .description p{
+    font-size: 1.6rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: .5rem 0;
+}
+
+.job-details .details .Save{
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    padding:1rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.job-details .details .Save:hover{
+    background-color: var(--black);
+}
+
+.job-details .details .Save i{
+    margin-right: .5rem;
+    color: var(--black);
+}
+
+.job-details .details .Save span{
+    color: var(--light-color);
+}
+
+.job-details .details .Save:hover i{
+    color: var(--white);
+}
+
+.job-details .details .Save:hover span{
+    color: var(--white);
+}
 
 
 

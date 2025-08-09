@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <section class="container">
+
+            <div id="menu-button" class="fas fa-bars-staggered"></div>
+
+            <a href="home.html" class="logo"><i class="fas fa-briefcase"></i>
+            GoCareer</a>
+
+             <nav class="navbar">
+                <a href="home.html">home</a>
+                <a href="about.html">about us</a>
+                <a href="jobs.html">all jobs</a>
+                <a href="contact.html">contact</a>
+                <a href="login.html">account</a>
+            </nav>
+
+            <a href="#" class="button" style="margin-top: 0%;">Post job</a>
+            
+        </section>
+    </header>
+    <!--header section ends-->
+
+    <!--Job Filter Section starts-->
+
+    <section class="job-filter">
+        <h1 class="heading">Filter Jobs</h1>
+        <form action="" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>Job Title <span>*</span></p>
+                    <input type="text" name="title" placeholder="Keyword,Category,Company" required maxlength="20" class="input">
+                </div>
+                <div class="box">
+                    <p>Job Location <span>*</span></p>
+                    <input type="text" name="location" placeholder="City, State or Country" required maxlength="50" class="input">
+                </div>
+            </div>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <input type="text" readonly name="Date" placeholder="Date Posted" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">Today</p>
+                        <p class="items">3 Days Ago</p>
+                        <p class="items">6 Days Ago</p>
+                        <p class="items">8 Days Ago</p>
+                        <p class="items">10 Days Ago</p>
+                        <p class="items">14 Days Ago</p>
+                        <p class="items">17 Days Ago</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <input type="text" readonly name="Date" placeholder="Education Level" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">10th Pass</p>
+                        <p class="items">12th Pass</p>
+                        <p class="items">Diploma</p>
+                        <p class="items">Bachlelor's Degree</p>
+                        <p class="items">Master's Degree</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <input type="text" readonly name="Date" placeholder="Work Shifts" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">Day Shift</p>
+                        <p class="items">Night Shift</p>
+                        <p class="items">Flexible Shift</p>
+                        <p class="items">Fixed Shift</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <input type="text" readonly name="Date" placeholder="Job Type" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">Full-Time</p>
+                        <p class="items">Part-Time</p>
+                        <p class="items">Intership</p>
+                        <p class="items">Contract</p>
+                        <p class="items">Temporary</p>
+                        <p class="items">Fresher</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <input type="text" readonly name="Date" placeholder="Estimated Salary" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">1k or Less</p>
+                        <p class="items">1k-5k</p>
+                        <p class="items">5k-10k</p>
+                        <p class="items">10k-20k</p>
+                        <p class="items">20k-30k</p>
+                        <p class="items">30k-40k</p>
+                        <p class="items">40k-50k</p>
+                        <p class="items">50k-1Lakh</p>
+                        <p class="items">1Lakh-5Lakh</p>
+                        <p class="items">5Lakh-10Lakh</p>
+                        <p class="items">10Lakh-20Lakh</p>
+                        <p class="items">20Lakh-30Lakh</p>
+                        <p class="items">30Lakh-40Lakh</p>
+                        <p class="items">40Lakh-50Lakh</p>
+                        <p class="items">50Lakh or more</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+                      
+            </div>
+        </form>
+    </section>
+    <!--Job filter Section ends-->
+   <!--all jobs section starts-->
+
+   <section class="jobs-container">
+
+    <h1 class="heading">All Jobs</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="company">
+                <img src="icon-1.jpg" alt="icon-1" width="120">
+                <div>
+                    <h3>ONE 100</h3>
+                    <p>10 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Android App Developer</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>20k - 40k</span></p>
+                <p><i class="fas fa briefcase"></i><span>Intership</span></p>
+                <p><i class="fas fa clock"></i><span>Day Shift</span></p>
+            </div>
+            <div class="flex-button">
+                <a href="view_job.html" class="button">View Details</a>
+                <button class="far fa-heart"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="icon-2.png" alt="icon-2" width="120">
+                <div>
+                    <h3>Ebay</h3>
+                    <p>20 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Business Development</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>55k - 70k</span></p>
+                <p><i class="fas fa briefcase"></i><span>Part-time</span></p>
+                <p><i class="fas fa clock"></i><span>Flexible Shift</span></p>
+            </div>
+            <div class="flex-button">
+                <a href="view_job.html" class="button">View Details</a>
+                <button class="far fa-heart"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="icon-3.png" alt="icon-2" width="150">
+                <div>
+                    <h3>intel</h3>
+                    <p>20 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">SOC Design Engineer</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>40k - 60k</span></p>
+                <p><i class="fas fa briefcase"></i><span>Intership</span></p>
+                <p><i class="fas fa clock"></i><span>Fixed Shift</span></p>
+            </div>
+            <div class="flex-button">
+                <a href="view_job.html" class="button">View Details</a>
+                <button class="far fa-heart"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="icon-4.png" alt="icon-2" width="190">
+                <div>
+                    <h3>Master Card</h3>
+                    <p>20 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Software Engineer</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>75k - 90k</span></p>
+                <p><i class="fas fa briefcase"></i><span>full-Time</span></p>
+                <p><i class="fas fa clock"></i><span>Night Shift</span></p>
+            </div>
+            <div class="flex-button">
+                <a href="view_job.html" class="button">View Details</a>
+                <button class="far fa-heart"></button>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="company">
+                <img src="icon-5.jpg" alt="icon-5" width="120">
+                <div>
+                    <h3>TNT</h3>
+                    <p>21 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">JavaScript Developer</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>20k - 40k</span></p>
+                <p><i class="fas fa briefcase"></i><span>Intership</span></p>
+                <p><i class="fas fa clock"></i><span>Day Shift</span></p>
+            </div>
+            <div class="flex-button">
+                <a href="view_job.html" class="button">View Details</a>
+                <button  class="far fa-heart"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="icon-6.jpg" alt="icon-6" width="120">
+                <div>
+                    <h3>hp</h3>
+                    <p>24 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Fronted Developer</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>55k - 70k</span></p>
+                <p><i class="fas fa briefcase"></i><span>Part-time</span></p>
+                <p><i class="fas fa clock"></i><span>Flexible Shift</span></p>
+            </div>
+            <div class="flex-button">
+                <a href="view_job.html" class="button">View Details</a>
+                <button class="far fa-heart"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="icon-7.jpg" alt="icon-7" width="150">
+                <div>
+                    <h3>CISCO</h3>
+                    <p>16 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Data Analyst</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>40k - 60k</span></p>
+                <p><i class="fas fa briefcase"></i><span>Full-Time</span></p>
+                <p><i class="fas fa clock"></i><span>Fixed Shift</span></p>
+            </div>
+            <div class="flex-button">
+                <a href="view_job.html" class="button">View Details</a>
+                <button class="far fa-heart"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="icon-8.jpg" alt="icon-8" width="190">
+                <div>
+                    <h3>ORACLE</h3>
+                    <p>15 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Backend Developer</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Delhi, India</span></p>
+            <div class="tags">
+                <p><i class="fas fa-indian-rupee-sign"></i><span>75k - 90k</span></p>
+                <p><i class="fas fa briefcase"></i><span>Part-Time</span></p>
+                <p><i class="fas fa clock"></i><span>Night Shift</span></p>
+            </div>
+            <div class="flex-button">
+                <a href="view_job.html" class="button">View Details</a>
+                <button class="far fa-heart"></button>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+
+    <!--job section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--all jobs section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+    <section class="grid">
+        <div class="box">
+        <h3>quick links</h3>
+        <a href="home.html"><i class="fas fa-angle-right"></i>home</a>
+        <a href="about.html"><i class="fas fa-angle-right"></i>about</a>
+        <a href="jobs.html"><i class="fas fa-angle-right"></i>all jobs</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>contact us</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>filter serach</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i>account</a>
+            <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
+            <a href="register.html"><i class="fas fa-angle-right"></i>register</a>
+            <a href="#"><i class="fas fa-angle-right"></i>post job</a>
+            <a href="#"><i class="fas fa-angle-right"></i>dashboard</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>  
+            <a href="#"><i class="fab fa-facebook-f"></i>facebbok</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+        </div>
+    </section>
+
+    <div class="credit">&copy; copyright @ 2025 by <span>ms.richa chaudhary</span> | all rights reserved!</div>
+
+    
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+<script src="script.js"></script>
+
+<script>
+    let dropdown_items = document.querySelectorAll('.job-filter form .dropdown-container .dropdown .lists .items')
+
+    dropdown_items.forEach(items => {
+        items.onclick = () => {
+            items_parent = items.parentElement.parentElement;
+            let output = items_parent.querySelector('.output');
+            output.value = items.innerText;
+        }
+    });
+    
+</script>
+</html>

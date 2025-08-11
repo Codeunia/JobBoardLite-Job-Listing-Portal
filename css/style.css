@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;&display=swap');
 
 :root{
-    --main-color:#16a59e;
+    --main-color:#1a53b5;
     --red:red;
     --light-color:#777;
     --light-bg:#eee;
@@ -151,7 +151,7 @@ section{
 
 
 .home-container{
-    background: url(/JobBoardLite-Job-Listing-Portal/image.job),rgba(0,0,0,.7)no-repeat;
+    background: url(/JobBoardLite-Job-Listing-Portal/imagee.job),rgba(0,0,0,0.341)no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -647,6 +647,211 @@ section{
 .job-details .details .Save:hover span{
     color: var(--white);
 }
+
+.view-company .details{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.view-company .details .info{
+    max-width: 30rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.view-company .details .info img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.view-company .details .info h3{
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.view-company .details .info p{
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.view-company .details .description{
+    margin-top: 2rem;
+}
+
+.view-company .details .description h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.view-company .details .description p{
+    padding: .5rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    line-height: 1.8;
+}
+
+.view-company .details ul li{
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    padding-top: 1.5rem;
+}
+
+.contact .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact .box-container .box{
+    background-color: var(--white);
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact .box-container .box i{
+    height: 4.5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.contact .box-container .box a{
+    display: block;
+    padding-top: .5rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    line-height: 1.8;
+}
+
+.contact form{
+    margin-top: 2rem;
+    background-color: var(--white);
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact form h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.contact form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+
+.contact form .flex .box{
+    flex:  1 1 40rem;
+}
+
+.contact form .input{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.4rem;
+    color: var(--black);
+    font-size: 1.8rem;
+    background-color: var(--light-bg);
+    margin: 1rem 0;
+}
+
+.contact form p{
+    text-align: left;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    color: var(--light-color);
+}
+
+.contact form p span{
+    color: var(--red);
+}
+
+.contact form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.account-form-container{
+    background: url(/JobBoardLite-Job-Listing-Portal/imagee.job),rgba(0, 0, 0, 0.341)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: color;
+}
+
+.account-form-container .account-form{
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-form-container .account-form form{
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding:3rem 2rem;
+    width: 50rem;
+    text-align: center;
+}
+
+.account-form-container .account-form form h3{
+    font-size: 2.3rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.account-form-container .account-form form .input{
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    padding: 1.4rem;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+}
+
+.account-form-container .account-form form p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.account-form-container .account-form form p a{
+    color: var(--main-color);
+}
+
+.account-form-container .account-form form p a:hover{
+    color: var(--black);
+    text-decoration: underline;
+}
+
+
 
 
 

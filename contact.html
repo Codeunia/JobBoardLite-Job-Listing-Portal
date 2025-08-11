@@ -31,8 +31,59 @@
         </section>
     </header>
 
+  <!--Contact us section start-->
 
+  <div class="section-title">Contact Us</div>
+ <section class="contact">
+    <div class="box-container">
 
+        <div class="box">
+            <i class="fas fa-phone"></i>
+            <a href="Tel:1234567890">123-456-7890</a>
+            <a href="Tel:1122334455">111-222-3330</a>
+        </div> 
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <a href="Mail to:riya@singhgmail.com">riya@singhgmail.com</a>
+            <a href="Mail to:megha@singhgmail.com">megha@singhgmail.com</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="#">Flat No.1, a-1 Building, Janakpuri, Delhi, India - 110076</a>
+        </div>
+    </div>
+
+    <form action="" method="post">
+        <h3>Drop Your Message</h3>
+        <div class="flex">
+            <div class="box">
+                <p>Name <span>*</span></p>
+                <input type="text" name="name" required maxlength="20" placeholder="Enter Your Name" class="input">
+            </div>
+            <div class="box">
+                <p>Email <span>*</span></p>
+                <input type="Email" name="Email" required maxlength="50" placeholder="Enter Your Email" class="input">
+            </div>
+            <div class="box">
+                <p>Number <span>*</span></p>
+                <input type="Number" name="Number" required min="0" max="9999999999" maxlength="20" placeholder="Enter Your Number" class="input">
+            </div>
+            <div class="box">
+                <p>Role <span>*</span></p>
+                <select name="Role" required class="input">
+                    <option value="Employee">Job Seeker (Employee)</option>
+                    <option value="Employeer">Job Provider (Employeer)</option>
+                </select>
+            </div>
+        </div>
+        <p>Message <span>*</span></p>
+        <textarea name="message" class="input" required maxlength="1000" placeholder="Enter Your Message" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send Message" name="send" class="button">
+    </form>
+
+ </section>
 
 
 
